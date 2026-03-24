@@ -6,7 +6,7 @@ import styles from '../inner.module.css';
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e) {
     e.preventDefault();
     setSubmitted(true);
   }

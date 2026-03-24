@@ -1,15 +1,7 @@
 import Link from 'next/link';
 import styles from './PageLayout.module.css';
 
-interface PageLayoutProps {
-  eyebrow?: string;
-  title: string;
-  children: React.ReactNode;
-  ctaText?: string;
-  ctaHref?: string;
-}
-
-export default function PageLayout({ eyebrow, title, children, ctaText, ctaHref }: PageLayoutProps) {
+export default function PageLayout({ eyebrow, title, children, ctaText, ctaHref }) {
   return (
     <div className={styles.page}>
       <div className={styles.arcBg}>
