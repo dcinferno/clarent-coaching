@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Nav.module.css';
 
@@ -17,6 +17,20 @@ const links = [
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [theme, setTheme] = useState('dark');
+
+  useEffect(() => {
+    const saved = localStorage.getItem('theme') || 'dark';
+    setTheme(saved);
+    document.documentElement.setAttribute('data-theme', saved);
+  }, []);
+
+  function toggleTheme() {
+    const next = theme === 'dark' ? 'light' : 'dark';
+    setTheme(next);
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  }
 
   return (
     <nav className={styles.nav}>
@@ -38,6 +52,11 @@ export default function Nav() {
               </Link>
             </li>
           ))}
+          <li>
+            <button className={styles.themeBtn} onClick={toggleTheme} aria-label="Toggle theme">
+              {theme === 'dark' ? '☀' : '☾'}
+            </button>
+          </li>
         </ul>
       </div>
     </nav>

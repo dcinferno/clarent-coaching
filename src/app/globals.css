@@ -14,6 +14,7 @@
   --accent: #6E7B8C;
   --divider: rgba(255,255,255,0.08);
   --hover-accent: #8FA3B8;
+  --nav-bg: rgba(15, 17, 21, 0.92);
   --max-width: 1200px;
   --content-width: 760px;
   --spacing-xs: 8px;
@@ -22,6 +23,17 @@
   --spacing-lg: 64px;
   --spacing-xl: 96px;
   --spacing-xxl: 140px;
+}
+
+[data-theme="light"] {
+  --bg-primary: #F7F5F2;
+  --bg-secondary: #EDEAE5;
+  --text-primary: #1A1D22;
+  --text-secondary: #5A6270;
+  --accent: #6E7B8C;
+  --divider: rgba(0,0,0,0.08);
+  --hover-accent: #3D4D5C;
+  --nav-bg: rgba(247, 245, 242, 0.92);
 }
 
 html {
