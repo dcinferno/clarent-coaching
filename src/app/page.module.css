@@ -1,0 +1,302 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 72px;
+  overflow: hidden;
+}
+
+.arcBg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.arcBg svg {
+  width: 100%;
+  height: 100%;
+}
+
+.arcBgSubtle {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.arcBgSubtle svg {
+  width: 100%;
+  height: 100%;
+}
+
+.heroInner {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.heroText {
+  max-width: 660px;
+}
+
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.heroText h1 {
+  margin-bottom: 32px;
+}
+
+.heroLead {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.heroSecondary {
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 16px 36px;
+  border: 1px solid rgba(232, 236, 241, 0.25);
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background: rgba(232, 236, 241, 0.06);
+  border-color: rgba(232, 236, 241, 0.5);
+}
+
+.section {
+  padding: 96px 0;
+}
+
+.altBg {
+  background: var(--bg-secondary);
+}
+
+.centered {
+  text-align: center;
+}
+
+.sectionLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 40px;
+}
+
+.sectionLabelCenter {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.sectionH2 {
+  margin-bottom: 48px;
+}
+
+.sectionH2Center {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.largeCopy {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--text-primary);
+  margin-bottom: 48px;
+}
+
+.stanzas {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  color: var(--text-secondary);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.arcDivider {
+  height: 40px;
+  overflow: hidden;
+}
+
+.arcDivider svg {
+  width: 100%;
+  height: 100%;
+}
+
+.transitionCopy {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-primary);
+  font-style: italic;
+}
+
+.approachCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.approachCopy p {
+  color: var(--text-secondary);
+}
+
+.notList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 0;
+  border-top: 1px solid var(--divider);
+  border-bottom: 1px solid var(--divider);
+}
+
+.notList p {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.pillar {
+  background: var(--bg-primary);
+}
+
+.pillarLink {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 40px;
+  gap: 16px;
+  height: 100%;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+.pillarLink:hover {
+  background: rgba(110, 123, 140, 0.08);
+}
+
+.pillarNumber {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+}
+
+.pillar h3 {
+  color: var(--text-primary);
+  font-size: 24px;
+}
+
+.pillar p {
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.65;
+  flex: 1;
+}
+
+.pillarArrow {
+  color: var(--accent);
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.pillarLink:hover .pillarArrow {
+  transform: translateX(4px);
+}
+
+.closingCta {
+  position: relative;
+  padding: 120px 0 96px;
+  overflow: hidden;
+}
+
+.closingCopy {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--text-primary);
+  margin-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding-top: 72px;
+  }
+
+  .heroInner {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .heroLead {
+    font-size: 18px;
+  }
+
+  .pillars {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .transitionCopy {
+    font-size: 20px;
+  }
+
+  .largeCopy {
+    font-size: 18px;
+  }
+
+  .closingCopy {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pillars {
+    grid-template-columns: 1fr;
+  }
+}

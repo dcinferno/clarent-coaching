@@ -1,0 +1,141 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(15, 17, 21, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--divider);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 64px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-decoration: none;
+}
+
+.logoName {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-primary);
+  letter-spacing: 0.01em;
+}
+
+.logoSub {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  align-items: center;
+}
+
+.link {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--text-primary);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 8px;
+}
+
+.bar {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.barOpen {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.barOpenMid {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 1024px) {
+  .inner {
+    padding: 0 40px;
+  }
+  .links {
+    gap: 20px;
+  }
+  .link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inner {
+    padding: 0 24px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .links {
+    display: none;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--bg-primary);
+    flex-direction: column;
+    padding: 32px 24px;
+    gap: 24px;
+    border-bottom: 1px solid var(--divider);
+  }
+
+  .linksOpen {
+    display: flex;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}
