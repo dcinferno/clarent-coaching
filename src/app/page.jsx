@@ -1,137 +1,395 @@
 import Link from 'next/link';
+import ClarityArc from '@/components/ClarityArc';
+import FAQAccordion from '@/components/FAQAccordion';
 import styles from './page.module.css';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <>
-      {/* Hero */}
-      <section className={styles.hero}>
-        <div className={styles.arcBg}>
-          <svg viewBox="0 0 1400 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <path d="M-100,300 Q400,80 900,300 Q1100,400 1500,200" stroke="#6E7B8C" strokeWidth="1.5" fill="none" opacity="0.12" />
-            <path d="M-100,400 Q500,150 1000,380 Q1200,460 1500,320" stroke="#6E7B8C" strokeWidth="1" fill="none" opacity="0.08" />
-            <path d="M200,500 Q600,250 1100,450 Q1300,520 1500,400" stroke="#6E7B8C" strokeWidth="1" fill="none" opacity="0.06" />
-          </svg>
+    <main className={styles.main}>
+
+      {/* 1 — Hero */}
+      <section className={`${styles.section} ${styles.hero}`}>
+        <div className={styles.heroInner}>
+          <div className="stack">
+            <p className={styles.eyebrow}>Strategic Clarity with Intention</p>
+            <h1>Clarity for complex decisions.</h1>
+            <p className={styles.subhead}>
+              <em>A structured reasoning method designed to restore forward movement.</em>
+            </p>
+            <p>
+              Complex decisions generate cognitive load, directional instability, and stalled movement.
+            </p>
+            <p>
+              More often than not, capable people do not struggle because they lack intelligence or discipline.
+              They struggle because the environment surrounding the decision becomes increasingly difficult
+              to interpret and organize.
+            </p>
+            <p>
+              As information expands, perspectives multiply, and responsibilities accumulate, thinking can
+              become dispersed, overloaded, or circular.
+            </p>
+            <p>
+              Clarent exists to restore structure where clear directional movement has become difficult to sustain.
+            </p>
+            <p className={styles.closingNote}>
+              The work does not promise clarity.<br />
+              It creates the conditions for movement toward clear decision-making.
+            </p>
+            <Link href="/contact" className={styles.button}>Begin the Conversation</Link>
+          </div>
         </div>
-        <div className={`container ${styles.heroInner}`}>
-          <div className={styles.heroText}>
-            <p className={styles.eyebrow}>Clarent Coaching</p>
-            <h1>Strategic Clarity<br />with Intention</h1>
-            <p className={styles.heroLead}>
-              The Clarent Approach addresses the thinking patterns that often lead to decision fatigue and stalled forward movement.
+        <ClarityArc />
+      </section>
+
+      {/* 2 — Begin CTA */}
+      <section className={`${styles.section} ${styles.bgTaupeLight}`}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>Begin the Conversation</h2>
+            <h3>Schedule a Fee-Free, No-Obligation Discovery Session</h3>
+            <p>
+              A conversation to determine whether the Clarent Approach is appropriate for the work being navigated.
             </p>
-            <p className={styles.heroSecondary}>
-              Clarent guides the process and provides the space where clarity can form through the client&apos;s own reasoning and reflection.
-            </p>
-            <Link href="/contact" className={styles.cta}>Schedule a Consultation</Link>
+            <Link href="/contact" className={styles.button}>Start a Clarity Consultation</Link>
           </div>
         </div>
       </section>
 
-      {/* Problem */}
+      {/* 3 — Core Problem */}
+      <section id="approach" className={styles.section}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>The Core Problem</h2>
+            <p>Modern decision environments generate continuous cognitive pressure.</p>
+            <p>Over time, three recognizable conditions often emerge:</p>
+            <div className={styles.problemBlocks}>
+              <div>
+                <h3>Decision Fog</h3>
+                <p>When priorities lose shape and the situation becomes difficult to interpret.</p>
+              </div>
+              <div>
+                <h3>Decision Fatigue</h3>
+                <p>When the weight of choices grows heavier and progress slows.</p>
+              </div>
+              <div>
+                <h3>Decision Stall</h3>
+                <p>When forward movement becomes difficult because clarity has not yet formed.</p>
+              </div>
+            </div>
+            <p className={styles.closingNote}>
+              These conditions are not failures of intelligence or capability.<br />
+              They are predictable responses to prolonged complexity and uncertainty.
+            </p>
+            <p>
+              Clarent exists to restore structure where thinking has become fragmented, overloaded, or stalled.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <ClarityArc />
+
+      {/* 4 — What Clarent Is */}
       <section className={styles.section}>
-        <div className={`container content-width`}>
-          <div className={styles.centered}>
-            <p className={styles.sectionLabel}>The Challenge</p>
-            <p className={styles.largeCopy}>
-              High-stakes decisions rarely fail because of a lack of intelligence or effort.<br />
-              They stall when thinking becomes fragmented, overloaded, or misaligned.
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>What Clarent Is</h2>
+            <p>
+              Clarent is a professional coaching practice built to support organized reasoning under uncertainty.
             </p>
-            <div className={styles.stanzas}>
-              <p>Information expands.<br />Perspectives multiply.<br />Clarity becomes harder to reach.</p>
-              <p>What follows is not inaction, but hesitation—<br />a cycle of overthinking, second-guessing, and delayed movement.</p>
+            <p>
+              The approach is designed for individuals navigating consequential decisions where competing pressures,
+              incomplete understanding, or prolonged ambiguity disrupt forward movement.
+            </p>
+            <p>
+              The work provides a stable, structured environment for examining complexity without prescribing answers
+              or applying motivational force.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 5 — Operating Principles */}
+      <section className={`${styles.section} ${styles.bgTaupeLight}`}>
+        <div className={styles.containerWide}>
+          <div className="stack">
+            <p className={styles.principlesIntro}>Clarent is grounded in three commitments:</p>
+            <div className={styles.principlesGrid}>
+              <div>
+                <h3>Structure over pressure</h3>
+                <p>Direction emerges from organized thinking, not urgency.</p>
+              </div>
+              <div>
+                <h3>Progress over certainty</h3>
+                <p>Movement can begin before clarity fully forms.</p>
+              </div>
+              <div>
+                <h3>Ownership over prescription</h3>
+                <p>Responsibility remains with the decision-maker.</p>
+              </div>
+            </div>
+            <p className={styles.principlesClose}>These principles shape the entire system.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* 6 — System Architecture */}
+      <section id="system" className={styles.section}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>The Clarent System Architecture</h2>
+
+            <div className={styles.systemComponent}>
+              <h3>The Clarent Coaching Arc™</h3>
+              <p>A twelve-session engagement organized into three Movements:</p>
+              <div className={styles.movementList}>
+                <div className={styles.movementItem}>
+                  <span className={styles.movementLabel}>Orientation</span>
+                  <p>Establishing stability, understanding, and cognitive organization.</p>
+                </div>
+                <div className={styles.movementItem}>
+                  <span className={styles.movementLabel}>Formation</span>
+                  <p>Examining possibilities, tensions, and evaluative considerations.</p>
+                </div>
+                <div className={styles.movementItem}>
+                  <span className={styles.movementLabel}>Intention</span>
+                  <p>Strengthening direction, ownership, and forward movement.</p>
+                </div>
+              </div>
+              <p>Each Movement is complete in itself; additional Movements deepen the work.</p>
+            </div>
+
+            <div className={styles.systemComponent}>
+              <h3>The Clarent Cognitive Sequence™</h3>
+              <p>Four progressive movements of thinking:</p>
+              <div className={styles.sequenceGrid}>
+                <div className={styles.sequenceItem}>
+                  <span className={styles.movementLabel}>Situation</span>
+                  <p>Clarifying what is happening.</p>
+                </div>
+                <div className={styles.sequenceItem}>
+                  <span className={styles.movementLabel}>Exploration</span>
+                  <p>Mapping pressures, assumptions, and possibilities.</p>
+                </div>
+                <div className={styles.sequenceItem}>
+                  <span className={styles.movementLabel}>Evaluation</span>
+                  <p>Organizing what is viable and coherent.</p>
+                </div>
+                <div className={styles.sequenceItem}>
+                  <span className={styles.movementLabel}>Direction</span>
+                  <p>Supporting decisions that can be held and acted upon.</p>
+                </div>
+              </div>
+              <p>The sequence adapts to the decision environment; it does not require linear progression.</p>
+            </div>
+
+            <div className={styles.systemComponent}>
+              <h3>Clarent Adaptive Logic™</h3>
+              <p>
+                An underlying reasoning structure stabilizes disrupted thinking patterns and restores
+                directional movement under conditions of complexity and uncertainty.
+              </p>
+              <p>This logic allows the work to remain adaptive without losing structure.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Divider arc */}
-      <div className={styles.arcDivider}>
-        <svg viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,20 Q600,0 1200,20" stroke="#6E7B8C" strokeWidth="1" fill="none" opacity="0.15" />
-        </svg>
-      </div>
-
-      {/* Transition */}
-      <section className={`${styles.section} ${styles.altBg}`}>
-        <div className="container content-width">
-          <div className={styles.centered}>
-            <p className={styles.transitionCopy}>
-              Clarity is not found through pressure or speed.<br />
-              It forms when thinking becomes structured, aligned, and intentional.
+      {/* 7 — Mid CTA */}
+      <section className={`${styles.section} ${styles.bgTaupe}`}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>The Structure Becomes Clearer in Conversation</h2>
+            <p>
+              The Clarent System is designed to support organized reasoning in environments where complexity
+              has disrupted directional movement.
             </p>
+            <p>
+              The Discovery Session introduces the structure of the engagement and helps determine whether the
+              work is appropriate for the situation being navigated.
+            </p>
+            <Link href="/contact" className={styles.button}>Begin the Conversation</Link>
           </div>
         </div>
       </section>
 
-      {/* Approach */}
+      {/* 8 — What Clarent Does */}
       <section className={styles.section}>
-        <div className="container content-width">
-          <p className={styles.sectionLabel}>The Approach</p>
-          <h2 className={styles.sectionH2}>A Disciplined Process<br />for Complex Decisions</h2>
-          <div className={styles.approachCopy}>
-            <p>Clarent Coaching is built on a structured method that helps clients organize their thinking, evaluate their direction, and move forward with intention.</p>
-            <div className={styles.notList}>
-              <p>It is not advice.</p>
-              <p>It is not consulting.</p>
-              <p>It is not therapy.</p>
-            </div>
-            <p>It is a disciplined process that restores clarity through the client&apos;s own reasoning.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Three Pillars */}
-      <section className={`${styles.section} ${styles.altBg}`}>
-        <div className="container">
-          <p className={styles.sectionLabelCenter}>The System</p>
-          <h2 className={styles.sectionH2Center}>Three Components</h2>
-          <div className={styles.pillars}>
-            <div className={styles.pillar}>
-              <Link href="/arc" className={styles.pillarLink}>
-                <span className={styles.pillarNumber}>01</span>
-                <h3>The Arc</h3>
-                <p>A structured 12-session engagement that guides progression from exploration to decision.</p>
-                <span className={styles.pillarArrow}>→</span>
-              </Link>
-            </div>
-            <div className={styles.pillar}>
-              <Link href="/matrix" className={styles.pillarLink}>
-                <span className={styles.pillarNumber}>02</span>
-                <h3>The Matrix</h3>
-                <p>A clear, client-facing framework that organizes thinking into practical steps.</p>
-                <span className={styles.pillarArrow}>→</span>
-              </Link>
-            </div>
-            <div className={styles.pillar}>
-              <Link href="/method" className={styles.pillarLink}>
-                <span className={styles.pillarNumber}>03</span>
-                <h3>The Approach</h3>
-                <p>A proprietary reasoning method guiding how clarity forms.</p>
-                <span className={styles.pillarArrow}>→</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Closing CTA */}
-      <section className={styles.closingCta}>
-        <div className={styles.arcBgSubtle}>
-          <svg viewBox="0 0 1400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,150 Q700,50 1400,150" stroke="#6E7B8C" strokeWidth="1" fill="none" opacity="0.1" />
-          </svg>
-        </div>
-        <div className="container content-width">
-          <div className={styles.centered}>
-            <p className={styles.closingCopy}>
-              Clarity becomes possible when thinking is structured.<br />
-              Forward movement becomes possible when clarity forms.
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>What Clarent Does</h2>
+            <p>
+              Clarent reduces cognitive overload, organizes competing considerations, and supports the development
+              of direction that can withstand pressure and uncertainty.
             </p>
-            <Link href="/contact" className={styles.cta}>Begin the Conversation</Link>
+            <p>The work supports:</p>
+            <ul className={styles.list}>
+              <li>Greater cognitive organization</li>
+              <li>Reduced mental noise</li>
+              <li>Directional coherence</li>
+              <li>Increased confidence in forward movement</li>
+              <li>Clearer understanding of what matters</li>
+              <li>Decisions that remain coherent under real conditions</li>
+            </ul>
+            <p className={styles.closingNote}>
+              Clarent does not remove uncertainty.<br />
+              It builds the structure required to move through it.
+            </p>
           </div>
         </div>
       </section>
-    </>
+
+      {/* 9 — What Clarent Is Not */}
+      <section className={`${styles.section} ${styles.bgTaupeLight}`}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>What Clarent Is Not</h2>
+            <p>
+              Clarent is not therapy, crisis intervention, legal counsel, financial advising, or motivational coaching.
+            </p>
+            <p>The work does not prescribe decisions or guarantee outcomes.</p>
+            <p>
+              It supports a disciplined process that enables thinking to become clearer, steadier, and more
+              coherent over time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 10 — Who Benefits */}
+      <section className={styles.section}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>Who Benefits Most</h2>
+            <p>
+              Clarent is designed for individuals navigating prolonged uncertainty, repeated decision loops,
+              competing obligations, or mental exhaustion that disrupts directional movement.
+            </p>
+            <p>
+              The approach is particularly suited for environments where clarity is incomplete, stakes are
+              meaningful, and forward movement is necessary.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 11 — Founder */}
+      <section id="founder" className={styles.section}>
+        <div className={styles.containerWide}>
+          <div className={styles.founderGrid}>
+            <div className="stack">
+              <p className={styles.eyebrow}>Founder</p>
+              <h2>Keith Graham</h2>
+              <p>
+                I created the Clarent Approach through nearly two decades of leadership experience, graduate study
+                in organizational leadership and coaching, and ongoing work around how thinking navigates difficult
+                decisions under pressure and uncertainty.
+              </p>
+              <p>Over time, I became increasingly interested in a persistent question:</p>
+              <p className={styles.pullQuote}>
+                Is there a structured and consistent way to support thinking that is clear enough to sustain
+                forward movement through difficult decisions—even before full clarity is experienced?
+              </p>
+              <p>Clarent developed from that question.</p>
+              <p>
+                The work is not built around authority, performance, or prescribing what to do.
+              </p>
+              <p>
+                Its purpose is to provide a structured environment where thinking can become organized enough
+                for direction and movement to begin forming more intentionally.
+              </p>
+              <p className={styles.closingNote}>
+                My role is not to provide answers.<br />
+                It is to create the conditions where clarity can form through the client&apos;s own reasoning.
+              </p>
+            </div>
+            {/* Drop /public/founder.jpg to populate this slot */}
+            <div className={styles.founderImageSlot} />
+          </div>
+        </div>
+      </section>
+
+      {/* 12 — Ethics */}
+      <section className={`${styles.section} ${styles.bgTaupeLight}`}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>Ethics and Professional Standards</h2>
+            <p>
+              Clarent operates within a professional coaching framework grounded in neutrality,
+              confidentiality, and autonomy.
+            </p>
+            <p>
+              The work supports responsible decision development without imposing beliefs or agendas.
+            </p>
+            <p>
+              Responsibility for decisions, actions, and outcomes remains with the decision-maker.
+            </p>
+            <Link href="/ethics" className={styles.textLink}>Read the full Ethics statement →</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 13 — Privacy */}
+      <section className={styles.section}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>Privacy and AI Use</h2>
+            <p>
+              Clarent maintains a minimal-record philosophy designed to protect privacy and reduce unnecessary
+              data retention.
+            </p>
+            <p>Sessions are not recorded.</p>
+            <p>
+              Limited AI tools may be used after sessions to help organize anonymized coaching reflections into
+              clearer written prompts or summaries. AI is not used to make decisions, conduct coaching independently,
+              or replace professional judgment.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 14 — Engagement Structure */}
+      <section className={`${styles.section} ${styles.bgTaupeLight}`}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>Engagement Structure</h2>
+            <h3>$900 per Movement</h3>
+            <p>Four sessions. No hidden fees. No upsells. No long-term commitment.</p>
+            <p>Sessions are typically weekly or bi-weekly and last about 60 minutes.</p>
+            <p>Each Movement stands alone; additional Movements deepen the work.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* 15 — FAQ */}
+      <section id="faq" className={styles.section}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>Essential Clarent Questions</h2>
+            <FAQAccordion />
+          </div>
+        </div>
+      </section>
+
+      {/* 16 — Final CTA */}
+      <section id="begin" className={`${styles.section} ${styles.bgSlate}`}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2 className={styles.whiteText}>Begin with a Conversation</h2>
+            <h3 className={styles.whiteText}>Schedule a Fee-Free, No-Obligation Discovery Session</h3>
+            <p className={styles.dimText}>
+              A conversation to determine whether the Clarent Approach is appropriate for the work being navigated.
+            </p>
+            <p className={styles.dimText}>There is no pressure to continue.</p>
+            <p className={styles.dimText}>
+              The purpose of the conversation is simply to determine whether the work is aligned with the
+              situation at hand.
+            </p>
+            <Link href="/contact" className={styles.buttonLight}>Schedule a Discovery Session</Link>
+          </div>
+        </div>
+      </section>
+
+    </main>
   );
 }
