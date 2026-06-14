@@ -427,7 +427,7 @@ export default function HomePage() {
       <section id="faq" className={styles.section}>
         <div className={styles.container}>
           <div className="stack">
-            <h2>Frequently AskedQuestions</h2>
+            <h2>Frequently Asked Questions</h2>
             <FAQAccordion />
           </div>
         </div>
