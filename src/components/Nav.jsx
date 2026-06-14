@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Nav.module.css';
 
@@ -13,9 +13,18 @@ const navLinks = [
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const headerClass = `${styles.header} ${scrolled ? styles.headerScrolled : styles.headerTop}`;
 
   return (
-    <header className={styles.header}>
+    <header className={headerClass}>
       <div className={styles.inner}>
         <Link href="/" className={styles.wordmark} onClick={() => setOpen(false)}>
           CLARENT COACHING

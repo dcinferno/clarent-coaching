@@ -11,29 +11,32 @@ export default function HomePage() {
       <section className={`${styles.section} ${styles.hero}`}>
         <div className={styles.heroInner}>
           <div className="stack">
-            <p className={styles.eyebrow}>Strategic Clarity with Intention</p>
-            <h1>Clarity for complex decisions.</h1>
-            <p className={styles.subhead}>
-              <em>A structured reasoning method designed to restore forward movement.</em>
+            <h1>Clear Thinking for Complex Decisions</h1>
+            <p>
+              Some decisions carry tremendous weight.<br />
+              The stakes are higher.<br />
+              Uncertainty lingers.
             </p>
             <p>
-              Complex decisions generate cognitive load, directional instability, and stalled movement.
+              Responsibilities compete for attention.<br />
+              Thinking becomes overloaded.<br />
+              Important decisions begin to stall.
             </p>
             <p>
-              More often than not, capable people do not struggle because they lack intelligence or discipline.
-              They struggle because the environment surrounding the decision becomes increasingly difficult
-              to interpret and organize.
+              You may feel pulled between responsibilities, possibilities, and expectations.
+              You know something needs to change, even if the next step isn't obvious.
             </p>
             <p>
-              As information expands, perspectives multiply, and responsibilities accumulate, thinking can
-              become dispersed, overloaded, or circular.
-            </p>
-            <p>
-              Clarent exists to restore structure where clear directional movement has become difficult to sustain.
+              Clarent provides a structured way to make sense of what is in front of you so direction can begin
+              to form—even before you have all the answers.
             </p>
             <p className={styles.closingNote}>
-              The work does not promise clarity.<br />
-              It creates the conditions for movement toward clear decision-making.
+              This is Decision Coaching: a disciplined way to untangle complexity, clarify priorities,
+              and move forward with confidence in your own reasoning.
+            </p>
+            <p>
+              This is not about receiving advice or being told what to do. It is a professional coaching practice
+              designed to help you think with greater structure, ownership, and purpose.
             </p>
             <Link href="/contact" className={styles.button}>Begin the Conversation</Link>
           </div>
@@ -95,21 +98,71 @@ export default function HomePage() {
           <div className="stack">
             <h2>What Clarent Is</h2>
             <p>
-              Clarent is a professional coaching practice built to support organized reasoning under uncertainty.
+              Clarent Coaching supports people navigating important decisions under uncertainty, complexity, or change.
             </p>
             <p>
-              The approach is designed for individuals navigating consequential decisions where competing pressures,
-              incomplete understanding, or prolonged ambiguity disrupt forward movement.
+              Many decisions involve competing priorities, incomplete information, and meaningful consequences.
+              In those moments, more information is not always the solution. Often, what is needed is a structured
+              way to think.
             </p>
-            <p>
-              The work provides a stable, structured environment for examining complexity without prescribing answers
-              or applying motivational force.
+            <p>Clarent provides an intentional space to process your thinking.</p>
+            <p>Together, we:</p>
+            <ul className={styles.bulletList}>
+              <li>Examine your situation deeply.</li>
+              <li>Explore possibilities without pressure.</li>
+              <li>Evaluate what holds up under reflection.</li>
+              <li>Develop ownership of your understanding.</li>
+              <li>Form direction with confidence in your own reasoning.</li>
+            </ul>
+            <p className={styles.closingNote}>
+              The goal is to create clear thinking — clear enough to move you forward — even without having all the answers.
             </p>
           </div>
         </div>
       </section>
 
-      {/* 5 — Operating Principles */}
+      <ClarityArc />
+
+      {/* 5 — The Clarent Difference */}
+      <section className={styles.section}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>The Clarent Difference</h2>
+            <p>Clarent is pragmatic.</p>
+            <p className={styles.closingNote}>
+              Clear thinking does the work; clarity is the outcome.
+            </p>
+            <p>
+              That distinction shapes the approach.<br />
+              The focus is on decision formation, not waiting for certainty.
+            </p>
+            <p>Because sometimes life cannot wait.</p>
+          </div>
+        </div>
+      </section>
+
+      <ClarityArc />
+
+      {/* 6 — Who Clarent Serves */}
+      <section className={styles.section}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>Who Clarent Serves</h2>
+            <p>
+              Clarent is for anyone navigating significant, complex, or difficult decisions—life transitions,
+              career changes, high‑stakes choices, or moments when the next step is unclear.
+            </p>
+            <p>
+              It is not limited to a profession, role, or life stage.<br />
+              It is for people who value structure, thoughtful examination, intentional exploration, and purposeful movement.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <ClarityArc />
+
+      {/* 6 — Operating Principles */}
       <section className={`${styles.section} ${styles.bgTaupeLight}`}>
         <div className={styles.containerWide}>
           <div className="stack">

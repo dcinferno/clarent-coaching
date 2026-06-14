@@ -8,9 +8,9 @@
 }
 
 /* Backgrounds */
-.bgTaupeLight { background: #f3eee8; }
-.bgTaupe     { background: #d8cec2; }
-.bgSlate     { background: #1f2933; }
+.bgTaupeLight { background: #f0ebe3; }
+.bgTaupe     { background: #c5baa8; }
+.bgSlate     { background: #1b2535; }
 
 /* Containers */
 .container {
@@ -61,7 +61,7 @@
   display: inline-block;
   padding: 14px 22px;
   border-radius: 6px;
-  background: #3f5368;
+  background: #c49a52;
   color: #ffffff;
   text-decoration: none;
   font-size: 15px;
@@ -70,15 +70,15 @@
 }
 
 .button:hover {
-  background: #2f4052;
+  background: #b08540;
 }
 
 .buttonLight {
   display: inline-block;
   padding: 14px 22px;
   border-radius: 6px;
-  background: #d8cec2;
-  color: #1f2933;
+  background: #c5baa8;
+  color: #1b2535;
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
@@ -91,9 +91,9 @@
 
 .textLink {
   font-size: 15px;
-  color: #3f5368;
+  color: #c49a52;
   text-decoration: none;
-  border-bottom: 1px solid #3f5368;
+  border-bottom: 1px solid #c49a52;
   padding-bottom: 1px;
   transition: opacity 0.15s;
   display: inline-block;
@@ -160,7 +160,7 @@
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #3f5368;
+  color: #c49a52;
 }
 
 /* Principles grid */
@@ -186,9 +186,24 @@
 }
 
 /* Closing note — restrained italic emphasis */
+.bulletList {
+  list-style: disc;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bulletList li {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--color-slate-deep);
+}
+
 .closingNote {
   font-style: italic;
-  color: #6f6a64;
+  font-weight: 700;
+  color: #151515;
   line-height: 1.7;
 }
 
@@ -196,8 +211,8 @@
 .pullQuote {
   font-size: 1.125rem;
   line-height: 1.65;
-  color: #3f5368;
-  border-left: 2px solid #d8cec2;
+  color: #c49a52;
+  border-left: 2px solid #c5baa8;
   padding-left: 20px;
   font-style: italic;
 }
@@ -213,7 +228,7 @@
 .founderImageSlot {
   width: 100%;
   aspect-ratio: 520 / 680;
-  background: #d8cec2;
+  background: #c5baa8;
   border-radius: 8px;
 }
 

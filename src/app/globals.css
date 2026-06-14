@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter+Tight:wght@400;500&family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter+Tight:wght@400;500&family=Inter:wght@300;400;500&family=Stack+Sans+Headline:wght@200..700&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -8,11 +8,11 @@
 
 :root {
   /* Design system */
-  --color-slate-deep: #1f2933;
-  --color-slate-blue: #3f5368;
-  --color-slate-blue-hover: #2f4052;
-  --color-taupe: #d8cec2;
-  --color-taupe-light: #f3eee8;
+  --color-slate-deep: #1b2535;
+  --color-slate-blue: #c49a52;
+  --color-slate-blue-hover: #b08540;
+  --color-taupe: #c5baa8;
+  --color-taupe-light: #f0ebe3;
   --color-gray-warm: #6f6a64;
   --color-gray-pale: #e5e2dd;
   --color-white: #ffffff;
@@ -24,12 +24,12 @@
 
   /* Legacy variables — used by inner pages */
   --bg-primary: #ffffff;
-  --bg-secondary: #f3eee8;
-  --text-primary: #1f2933;
+  --bg-secondary: #f0ebe3;
+  --text-primary: #1b2535;
   --text-secondary: #6f6a64;
-  --accent: #3f5368;
+  --accent: #c49a52;
   --divider: #e5e2dd;
-  --hover-accent: #2f4052;
+  --hover-accent: #b08540;
   --nav-bg: rgba(255, 255, 255, 0.95);
   --max-width: 1120px;
   --content-width: 720px;
@@ -60,8 +60,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(2.125rem, 5vw, 3rem);
-  line-height: 1.1;
+  font-family: 'Stack Sans Headline', 'Inter Tight', sans-serif;
+  font-size: clamp(2.5rem, 5.5vw, 3.5rem);
+  line-height: 1.08;
   letter-spacing: -0.03em;
 }
 

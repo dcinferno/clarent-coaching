@@ -4,29 +4,50 @@
   left: 0;
   right: 0;
   z-index: 100;
+  transition: background 0.3s ease, border-color 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+/* Transparent over dark hero */
+.headerTop {
+  background: transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+/* White once scrolled */
+.headerScrolled {
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid #e5e2dd;
+  border-bottom-color: #e5e2dd;
 }
 
 .inner {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 0 24px;
-  height: 68px;
+  padding: 0 32px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 32px;
 }
 
+/* Wordmark — white at top, dark when scrolled */
 .wordmark {
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.1em;
-  color: #1f2933;
   text-decoration: none;
   flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+.headerTop .wordmark {
+  color: #ffffff;
+}
+
+.headerScrolled .wordmark {
+  color: #1b2535;
 }
 
 .nav {
@@ -39,26 +60,50 @@
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  color: #6f6a64;
   text-decoration: none;
-  transition: color 0.15s;
+  transition: color 0.15s, opacity 0.15s;
 }
 
-.link:hover {
-  color: #1f2933;
+.headerTop .link {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.headerTop .link:hover {
+  color: #ffffff;
+}
+
+.headerScrolled .link {
+  color: #6f6a64;
+}
+
+.headerScrolled .link:hover {
+  color: #1b2535;
 }
 
 .begin {
   font-size: 13px;
   font-weight: 500;
-  color: #3f5368;
   text-decoration: none;
-  border-bottom: 1px solid #3f5368;
   padding-bottom: 1px;
-  transition: opacity 0.15s;
+  transition: color 0.3s ease, border-color 0.3s ease, opacity 0.15s;
 }
 
-.begin:hover {
+.headerTop .begin {
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.headerTop .begin:hover {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.headerScrolled .begin {
+  color: #c49a52;
+  border-bottom: 1px solid #c49a52;
+}
+
+.headerScrolled .begin:hover {
   opacity: 0.7;
 }
 
@@ -79,9 +124,16 @@
   display: block;
   width: 20px;
   height: 1px;
-  background: #1f2933;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.3s ease;
   transform-origin: center;
+}
+
+.headerTop .bar {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.headerScrolled .bar {
+  background: #1b2535;
 }
 
 @media (max-width: 768px) {
@@ -92,24 +144,40 @@
   .nav {
     display: none;
     position: fixed;
-    top: 68px;
+    top: 72px;
     left: 0;
     right: 0;
-    background: #ffffff;
+    background: #1b2535;
     flex-direction: column;
     align-items: flex-start;
-    padding: 28px 24px 32px;
+    padding: 28px 32px 32px;
     gap: 20px;
-    border-bottom: 1px solid #e5e2dd;
-    box-shadow: 0 8px 24px rgba(31, 41, 51, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .navOpen {
     display: flex;
   }
 
-  .link,
-  .begin {
+  /* Mobile nav always uses dark bg so links are always light */
+  .nav .link,
+  .headerTop .nav .link,
+  .headerScrolled .nav .link {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+  }
+
+  .nav .link:hover,
+  .headerTop .nav .link:hover,
+  .headerScrolled .nav .link:hover {
+    color: #ffffff;
+  }
+
+  .nav .begin,
+  .headerTop .nav .begin,
+  .headerScrolled .nav .begin {
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom-color: rgba(255, 255, 255, 0.4);
     font-size: 16px;
   }
 }
