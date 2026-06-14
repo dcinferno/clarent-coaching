@@ -128,15 +128,15 @@ export default function HomePage() {
         <div className={styles.container}>
           <div className="stack">
             <h2>The Clarent Difference</h2>
-            <p>Clarent is pragmatic.</p>
-            <p className={styles.closingNote}>
-              Clear thinking does the work; clarity is the outcome.
-            </p>
+            <p>When we face difficult and complex decisions, we naturally search for clarity.</p>
+            <p>It feels like the thing we need before we can move forward.</p>
+            <p>But what if clarity is not the beginning?</p>
+            <p>What if clear thinking comes first?</p>
             <p>
-              That distinction shapes the approach.<br />
-              The focus is on decision formation, not waiting for certainty.
+              What if movement begins when our thinking becomes more coherent, and clarity develops
+              as direction starts to take shape?
             </p>
-            <p>Because sometimes life cannot wait.</p>
+            <p className={styles.closingNote}>That is the Clarent way.</p>
           </div>
         </div>
       </section>
@@ -147,9 +147,9 @@ export default function HomePage() {
       <section className={styles.section}>
         <div className={styles.container}>
           <div className="stack">
-            <h2>Who Clarent Serves</h2>
+            <h2>How Clarent Serves You</h2>
             <p>
-              Clarent is for anyone navigating significant, complex, or difficult decisions—life transitions,
+              <strong>Clarent is for anyone navigating significant, complex, or difficult decisions</strong>—life transitions,
               career changes, high‑stakes choices, or moments when the next step is unclear.
             </p>
             <p>
@@ -186,63 +186,65 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6 — System Architecture */}
+      {/* 7 — How Clarent Works */}
       <section id="system" className={styles.section}>
         <div className={styles.container}>
           <div className="stack">
-            <h2>The Clarent System Architecture</h2>
+            <h2>How Clarent Works</h2>
+            <p>
+              Clarent combines a defined coaching journey with a decision‑formation process that can support
+              how you naturally think, decide, and move through complexity with direction.
+            </p>
 
             <div className={styles.systemComponent}>
               <h3>The Clarent Coaching Arc™</h3>
-              <p>A twelve-session engagement organized into three Movements:</p>
+              <p>The Arc provides the overall journey:</p>
               <div className={styles.movementList}>
                 <div className={styles.movementItem}>
                   <span className={styles.movementLabel}>Orientation</span>
-                  <p>Establishing stability, understanding, and cognitive organization.</p>
+                  <p>Builds understanding of your situation.</p>
                 </div>
                 <div className={styles.movementItem}>
                   <span className={styles.movementLabel}>Formation</span>
-                  <p>Examining possibilities, tensions, and evaluative considerations.</p>
+                  <p>Develops possibilities, evaluates considerations, and strengthens ownership.</p>
                 </div>
                 <div className={styles.movementItem}>
                   <span className={styles.movementLabel}>Intention</span>
-                  <p>Strengthening direction, ownership, and forward movement.</p>
+                  <p>Supports direction and the movement that follows.</p>
                 </div>
               </div>
-              <p>Each Movement is complete in itself; additional Movements deepen the work.</p>
+              <p>Each stage builds on the last, creating a structured path toward purposeful movement.</p>
+              <p className={styles.sequenceFlow}>Orientation → Formation → Intention</p>
             </div>
 
             <div className={styles.systemComponent}>
               <h3>The Clarent Cognitive Sequence™</h3>
-              <p>Four progressive movements of thinking:</p>
-              <div className={styles.sequenceGrid}>
-                <div className={styles.sequenceItem}>
-                  <span className={styles.movementLabel}>Situation</span>
-                  <p>Clarifying what is happening.</p>
-                </div>
-                <div className={styles.sequenceItem}>
-                  <span className={styles.movementLabel}>Exploration</span>
-                  <p>Mapping pressures, assumptions, and possibilities.</p>
-                </div>
-                <div className={styles.sequenceItem}>
-                  <span className={styles.movementLabel}>Evaluation</span>
-                  <p>Organizing what is viable and coherent.</p>
-                </div>
-                <div className={styles.sequenceItem}>
-                  <span className={styles.movementLabel}>Direction</span>
-                  <p>Supporting decisions that can be held and acted upon.</p>
-                </div>
-              </div>
-              <p>The sequence adapts to the decision environment; it does not require linear progression.</p>
+              <p>The Cognitive Sequence is your thinking map that guides our conversation:</p>
+              <p className={styles.sequenceFlow}>Situation → Exploration → Evaluation → Ownership → Direction</p>
+              <ul className={styles.bulletList}>
+                <li><strong>Situation</strong> clarifies what is happening and why it matters.</li>
+                <li><strong>Exploration</strong> examines possibilities, perspectives, and alternatives.</li>
+                <li><strong>Evaluation</strong> identifies what holds up under reflection.</li>
+                <li><strong>Ownership</strong> strengthens commitment to your understanding.</li>
+                <li><strong>Direction</strong> identifies the path you are prepared to pursue.</li>
+              </ul>
+              <p>
+                The Sequence does not require certainty.<br />
+                It provides structure so direction can emerge before the full picture is available.
+              </p>
             </div>
 
             <div className={styles.systemComponent}>
-              <h3>Clarent Adaptive Logic™</h3>
-              <p>
-                An underlying reasoning structure stabilizes disrupted thinking patterns and restores
-                directional movement under conditions of complexity and uncertainty.
+              <h3>The Clarent Adaptive Logic™</h3>
+              <p>The Adaptive Logic is how Clarent supports the conversation and guards the integrity of the process.</p>
+              <p className={styles.closingNote}>
+                The Sequence is your map.<br />
+                The Logic is Clarent&apos;s.
               </p>
-              <p>This logic allows the work to remain adaptive without losing structure.</p>
+              <p>
+                It organizes complex considerations so understanding becomes more coherent and aligned
+                over time, even when the situation feels circular.
+              </p>
             </div>
           </div>
         </div>
@@ -326,44 +328,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 11 — Founder */}
-      <section id="founder" className={styles.section}>
-        <div className={styles.containerWide}>
-          <div className={styles.founderGrid}>
-            <div className="stack">
-              <p className={styles.eyebrow}>Founder</p>
-              <h2>Keith Graham</h2>
-              <p>
-                I created the Clarent Approach through nearly two decades of leadership experience, graduate study
-                in organizational leadership and coaching, and ongoing work around how thinking navigates difficult
-                decisions under pressure and uncertainty.
-              </p>
-              <p>Over time, I became increasingly interested in a persistent question:</p>
-              <p className={styles.pullQuote}>
-                Is there a structured and consistent way to support thinking that is clear enough to sustain
-                forward movement through difficult decisions—even before full clarity is experienced?
-              </p>
-              <p>Clarent developed from that question.</p>
-              <p>
-                The work is not built around authority, performance, or prescribing what to do.
-              </p>
-              <p>
-                Its purpose is to provide a structured environment where thinking can become organized enough
-                for direction and movement to begin forming more intentionally.
-              </p>
-              <p className={styles.closingNote}>
-                My role is not to provide answers.<br />
-                It is to create the conditions where clarity can form through the client&apos;s own reasoning.
-              </p>
-            </div>
-            {/* Drop /public/founder.jpg to populate this slot */}
-            <div className={styles.founderImageSlot} />
+      {/* 11 — Engagement Structure */}
+      <section className={`${styles.section} ${styles.bgTaupeLight}`}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>Your Investment</h2>
+            <h3>$900 per Movement</h3>
+            <p>Four sessions. No hidden fees. No upsells. No long-term commitment.</p>
+            <p>Sessions are typically weekly or bi-weekly and last about 60 minutes.</p>
+            <p>Each Movement stands alone; additional Movements deepen the work.</p>
           </div>
         </div>
       </section>
 
-      {/* 12 — Ethics */}
-      <section className={`${styles.section} ${styles.bgTaupeLight}`}>
+      {/* 13 — Ethics */}
+      <section className={styles.section}>
         <div className={styles.container}>
           <div className="stack">
             <h2>Ethics and Professional Standards</h2>
@@ -401,15 +380,45 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 14 — Engagement Structure */}
-      <section className={`${styles.section} ${styles.bgTaupeLight}`}>
-        <div className={styles.container}>
-          <div className="stack">
-            <h2>Engagement Structure</h2>
-            <h3>$900 per Movement</h3>
-            <p>Four sessions. No hidden fees. No upsells. No long-term commitment.</p>
-            <p>Sessions are typically weekly or bi-weekly and last about 60 minutes.</p>
-            <p>Each Movement stands alone; additional Movements deepen the work.</p>
+      {/* 14 — Founder */}
+      <section id="founder" className={styles.section}>
+        <div className={styles.containerWide}>
+          <div className={styles.founderGrid}>
+            <div className="stack">
+              <p className={styles.eyebrow}>Founder</p>
+              <h2>Keith Graham</h2>
+              <p>
+                After years of working with, and coaching people in organizational settings, I noticed a pattern:
+                the more important the decision, the longer people waited for complete clarity.
+              </p>
+              <p>Over time, I came to a different understanding.</p>
+              <p className={styles.closingNote}>
+                Movement doesn&apos;t require certainty.<br />
+                It requires thinking clearly enough for direction to begin to form—even when the full picture isn&apos;t available.
+              </p>
+              <p>That realization became the starting point for Clarent.</p>
+              <p>
+                My approach is shaped by leadership experience and graduate studies in Organizational Leadership
+                with a concentration in Coaching &amp; Mentoring.
+              </p>
+              <p>
+                I became increasingly focused on how people navigate important decisions when uncertainty remains
+                and complexity cannot be removed.
+              </p>
+              <p>
+                Clarent grew out of that focus—a structured way to think more clearly, form decisions with intention,
+                and move forward without waiting for perfect certainty.
+              </p>
+              <p className={styles.founderByline}>
+                Keith Graham<br />
+                Founder, Clarent Coaching<br />
+                Master of Arts in Organizational Leadership<br />
+                Coaching &amp; Mentoring Concentration<br />
+                Regent University
+              </p>
+            </div>
+            {/* Drop /public/founder.jpg to populate this slot */}
+            <div className={styles.founderImageSlot} />
           </div>
         </div>
       </section>
