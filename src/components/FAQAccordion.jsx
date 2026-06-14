@@ -3,32 +3,36 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    q: 'What is Clarent?',
-    a: 'A structured coaching approach for navigating consequential decisions under uncertainty.',
+    q: 'Is Clarent a course or curriculum?',
+    a: 'No.\nClarent provides structure, but it does not follow a predetermined curriculum or teach a prescribed set of lessons.\n\nThe structure remains consistent. The content is shaped by the situation you bring.',
   },
   {
-    q: 'What is the actual promise?',
-    a: 'Movement toward clear decision-making, not guaranteed clarity.',
+    q: 'Are the Clarent Cognitive Sequence™ and Adaptive Logic™ a formula?',
+    a: 'No.\nThey provide structure for the coaching conversation, but they do not prescribe conclusions or outcomes.\nThe framework remains consistent while the work adapts to the person and situation.',
   },
   {
-    q: 'How can movement occur before clarity?',
-    a: 'Organized thinking creates enough stability to act and test direction in real time.',
+    q: 'Why does the Clarent Coaching Arc™ consist of three Movements?',
+    a: 'People arrive at understanding and direction at different rates.\n\nAt the end of each Movement, you decide whether to conclude the work or continue the conversation.',
   },
   {
-    q: 'What if clarity does not emerge by the end of a Movement?',
-    a: 'Progress still occurs: thinking organizes, direction strengthens, and movement develops.',
+    q: 'What if I have the answers I need before a Movement is complete?',
+    a: 'The remaining sessions can be used to strengthen, examine, and support the direction that has emerged.',
   },
   {
-    q: 'What if clarity emerges early?',
-    a: 'Remaining sessions test and reinforce the direction to ensure it remains coherent under real conditions.',
+    q: 'What happens if I do not have the answers I need after a Movement is complete?',
+    a: 'Some decisions require more time than others.\nAt the end of each Movement, you decide whether continuing the conversation serves your needs.',
   },
   {
-    q: 'Does Clarent remove uncertainty?',
-    a: 'No. It builds structure that enables movement despite uncertainty.',
+    q: 'Is there a payment plan?',
+    a: 'Each Movement is paid in full before the first session begins.',
   },
   {
-    q: 'Who benefits most?',
-    a: 'Individuals navigating repeated decision loops, competing pressures, cognitive overload, or prolonged directional uncertainty.',
+    q: 'What if I cannot meet weekly or bi‑weekly?',
+    a: 'Sessions can be arranged in a way that reasonably fits your circumstances.',
+  },
+  {
+    q: 'What is the refund policy?',
+    a: 'Payments are generally non‑refundable once a Movement has been purchased. Additional details are provided in the Coaching Agreement.',
   },
 ];
 
@@ -64,9 +68,13 @@ export default function FAQAccordion() {
             </span>
           </button>
           {open === i && (
-            <p style={{ margin: '0 0 24px', color: '#6F6A64', fontSize: '1.0625rem', lineHeight: 1.7 }}>
-              {faq.a}
-            </p>
+            <div style={{ margin: '0 0 24px', color: '#6F6A64', fontSize: '1.0625rem', lineHeight: 1.7 }}>
+              {faq.a.split('\n\n').map((block, bi) => (
+                <p key={bi} style={{ margin: bi > 0 ? '12px 0 0' : '0', whiteSpace: 'pre-line' }}>
+                  {block}
+                </p>
+              ))}
+            </div>
           )}
         </div>
       ))}
