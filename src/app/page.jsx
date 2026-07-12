@@ -130,7 +130,7 @@ export default function HomePage() {
             <div className={styles.systemComponent}>
               <h3>The Clarent Coaching Arc™</h3>
               <p>
-                A three‑Movement coaching journey. Each Movement has four sessions that complete a stage
+                A three‑Movement coaching journey. Each Movement has four progressive sessions that complete a stage
                 in the process. You can stop or continue based on what you need.
               </p>
               <div className={styles.movementList}>
