@@ -186,7 +186,6 @@ export default function HomePage() {
         <div className={styles.containerWide}>
           <div className={styles.founderGrid}>
             <div className="stack">
-              <p className={styles.eyebrow}>About Keith Graham</p>
               <h2>How it all started</h2>
               <p>
                 I founded Clarent Coaching after more than thirteen years of helping people navigate
