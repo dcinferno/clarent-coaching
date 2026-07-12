@@ -306,6 +306,8 @@
     order: -1;
     aspect-ratio: 3 / 4;
     max-height: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
