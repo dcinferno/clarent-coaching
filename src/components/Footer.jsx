@@ -9,7 +9,7 @@ export default function Footer() {
         <nav className={styles.links}>
           <Link href="/#about" className={styles.link}>About</Link>
           <Link href="/#system" className={styles.link}>System</Link>
-          <Link href="/#founder" className={styles.link}>Keith Graham</Link>
+          <Link href="/#founder" className={styles.link}>About Coach</Link>
           <Link href="/#faq" className={styles.link}>FAQ</Link>
           <Link href="/#ethics" className={styles.link}>Ethics</Link>
           <Link href="/#privacy" className={styles.link}>Privacy</Link>
