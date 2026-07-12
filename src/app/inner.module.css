@@ -264,21 +264,21 @@
 .submitBtn {
   display: inline-block;
   padding: 16px 36px;
-  border: 1px solid rgba(232, 236, 241, 0.25);
+  border: none;
+  border-radius: 6px;
   font-family: 'Inter', sans-serif;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--text-primary);
-  transition: all 0.25s ease;
-  background: none;
+  color: #ffffff;
+  background: #1b2535;
+  transition: background 0.2s ease;
   cursor: pointer;
   align-self: flex-start;
   margin-top: 8px;
 }
 
 .submitBtn:hover {
-  background: rgba(232, 236, 241, 0.06);
-  border-color: rgba(232, 236, 241, 0.5);
+  background: #c49a52;
 }

@@ -4,22 +4,13 @@
   left: 0;
   right: 0;
   z-index: 100;
-  transition: background 0.3s ease, border-color 0.3s ease;
-  border-bottom: 1px solid transparent;
-}
-
-/* Transparent over dark hero */
-.headerTop {
-  background: transparent;
-  border-bottom-color: rgba(255, 255, 255, 0.08);
-}
-
-/* White once scrolled */
-.headerScrolled {
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(8px);
-  border-bottom-color: #e5e2dd;
+  border-bottom: 1px solid #e5e2dd;
 }
+
+.headerTop {}
+.headerScrolled {}
 
 .inner {
   max-width: 1120px;
@@ -32,21 +23,12 @@
   gap: 32px;
 }
 
-/* Wordmark — white at top, dark when scrolled */
 .wordmark {
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-decoration: none;
   flex-shrink: 0;
-  transition: color 0.3s ease;
-}
-
-.headerTop .wordmark {
-  color: #ffffff;
-}
-
-.headerScrolled .wordmark {
   color: #1b2535;
 }
 
@@ -64,19 +46,11 @@
   transition: color 0.15s, opacity 0.15s;
 }
 
-.headerTop .link {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.headerTop .link:hover {
-  color: #ffffff;
-}
-
-.headerScrolled .link {
+.link {
   color: #6f6a64;
 }
 
-.headerScrolled .link:hover {
+.link:hover {
   color: #1b2535;
 }
 
@@ -88,22 +62,12 @@
   transition: color 0.3s ease, border-color 0.3s ease, opacity 0.15s;
 }
 
-.headerTop .begin {
-  color: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.headerTop .begin:hover {
-  color: #ffffff;
-  border-bottom-color: #ffffff;
-}
-
-.headerScrolled .begin {
+.begin {
   color: #c49a52;
   border-bottom: 1px solid #c49a52;
 }
 
-.headerScrolled .begin:hover {
+.begin:hover {
   opacity: 0.7;
 }
 
@@ -159,23 +123,16 @@
     display: flex;
   }
 
-  /* Mobile nav always uses dark bg so links are always light */
-  .nav .link,
-  .headerTop .nav .link,
-  .headerScrolled .nav .link {
+  .nav .link {
     color: rgba(255, 255, 255, 0.75);
     font-size: 16px;
   }
 
-  .nav .link:hover,
-  .headerTop .nav .link:hover,
-  .headerScrolled .nav .link:hover {
+  .nav .link:hover {
     color: #ffffff;
   }
 
-  .nav .begin,
-  .headerTop .nav .begin,
-  .headerScrolled .nav .begin {
+  .nav .begin {
     color: rgba(255, 255, 255, 0.9);
     border-bottom-color: rgba(255, 255, 255, 0.4);
     font-size: 16px;

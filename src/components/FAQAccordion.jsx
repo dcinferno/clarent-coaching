@@ -3,36 +3,28 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    q: 'Is Clarent a course or curriculum?',
-    a: 'No.\nClarent provides structure, but it does not follow a predetermined curriculum or teach a prescribed set of lessons.\n\nThe structure remains consistent. The content is shaped by the situation you bring.',
+    q: 'What kind of client does Clarent serve?',
+    a: 'Clarent works with anyone facing difficult, complex, and consequential uncertainty — a significant life pivot, a leadership decision, or an organizational obligation — because the concern is not the position, but the person.',
   },
   {
-    q: 'Are the Clarent Cognitive Sequence™ and Adaptive Logic™ a formula?',
-    a: 'No.\nThey provide structure for the coaching conversation, but they do not prescribe conclusions or outcomes.\nThe framework remains consistent while the work adapts to the person and situation.',
+    q: 'What if I have a decision that needs quick resolution?',
+    a: 'Clarent\'s work is iterative and intentionally thorough. There are no quick fixes for complex decisions. The work starts with building coherent understanding so direction can support decision formation—and cognitive clarity can follow from that process.',
   },
   {
-    q: 'Why does the Clarent Coaching Arc™ consist of three Movements?',
-    a: 'People arrive at understanding and direction at different rates.\n\nAt the end of each Movement, you decide whether to conclude the work or continue the conversation.',
+    q: 'Why is there no payment plan?',
+    a: 'Clarent keeps the focus on the work. Payment plans can shift attention away from the coaching itself, so Clarent chooses not to use them.',
   },
   {
-    q: 'What if I have the answers I need before a Movement is complete?',
-    a: 'The remaining sessions can be used to strengthen, examine, and support the direction that has emerged.',
+    q: 'Is there a refund?',
+    a: 'Clarent does not offer refunds, except when service cannot continue for legal or operational reasons. In those cases, a refund can be issued for paid sessions not yet started.',
   },
   {
-    q: 'What happens if I do not have the answers I need after a Movement is complete?',
-    a: 'Some decisions require more time than others.\nAt the end of each Movement, you decide whether continuing the conversation serves your needs.',
+    q: 'How long is a session, and how rigid is the conversation?',
+    a: 'Sessions are approximately an hour long. The structure is flexible enough to account for your cognitive load while still keeping the work focused.',
   },
   {
-    q: 'Is there a payment plan?',
-    a: 'Each Movement is paid in full before the first session begins.',
-  },
-  {
-    q: 'What if I cannot meet weekly or bi‑weekly?',
-    a: 'Sessions can be arranged in a way that reasonably fits your circumstances.',
-  },
-  {
-    q: 'What is the refund policy?',
-    a: 'Payments are generally non‑refundable once a Movement has been purchased. Additional details are provided in the Coaching Agreement.',
+    q: 'How will I know if I got what I paid for?',
+    a: 'Clarent makes no guarantees about results. What you\'re paying for is a structured environment where coherent understanding can form and direction can support decision formation—so cognitive clarity becomes the outcome of disciplined work. The reasoning you develop isn\'t just "yours" — it\'s reasoning that fits your needs, holds up under pressure, and gives you something you can genuinely work with.',
   },
 ];
 

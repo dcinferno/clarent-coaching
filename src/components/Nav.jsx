@@ -4,11 +4,13 @@ import Link from 'next/link';
 import styles from './Nav.module.css';
 
 const navLinks = [
-  { href: '/#approach', label: 'Approach' },
+  { href: '/#about', label: 'About' },
   { href: '/#system', label: 'System' },
-  { href: '/#founder', label: 'Founder' },
-  { href: '/ethics', label: 'Ethics' },
-  { href: '/faq', label: 'FAQ' },
+  { href: '/#founder', label: 'Keith Graham' },
+  { href: '/#faq', label: 'FAQ' },
+  { href: '/#ethics', label: 'Ethics' },
+  { href: '/#privacy', label: 'Privacy' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export default function Nav() {
@@ -47,9 +49,6 @@ export default function Nav() {
               {link.label}
             </Link>
           ))}
-          <Link href="/contact" className={styles.begin} onClick={() => setOpen(false)}>
-            Begin
-          </Link>
         </nav>
       </div>
     </header>
