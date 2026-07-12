@@ -3,7 +3,7 @@ import styles from '../inner.module.css';
 
 export default function TermsPage() {
   return (
-    <PageLayout eyebrow="Legal" title="Terms of Use">
+    <PageLayout title="Terms of Use">
       <div className={styles.prose}>
 
         <p className={styles.lead}>
