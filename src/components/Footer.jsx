@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
-        <p className={styles.tagline}>© 2026 Clarent Coaching™</p>
+        <p className={styles.tagline}>© 2026 Clarent Coaching™. All rights reserved.</p>
         <nav className={styles.links}>
           <Link href="/#about" className={styles.link}>About</Link>
           <Link href="/#system" className={styles.link}>System</Link>
@@ -13,6 +13,7 @@ export default function Footer() {
           <Link href="/#faq" className={styles.link}>FAQ</Link>
           <Link href="/#ethics" className={styles.link}>Ethics</Link>
           <Link href="/#privacy" className={styles.link}>Privacy</Link>
+          <Link href="/terms" className={styles.link}>Terms</Link>
           <Link href="/contact" className={styles.link}>Contact</Link>
         </nav>
       </div>

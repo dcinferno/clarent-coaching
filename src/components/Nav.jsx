@@ -10,6 +10,7 @@ const navLinks = [
   { href: '/#faq', label: 'FAQ' },
   { href: '/#ethics', label: 'Ethics' },
   { href: '/#privacy', label: 'Privacy' },
+  { href: '/terms', label: 'Terms' },
   { href: '/contact', label: 'Contact' },
 ];
 
