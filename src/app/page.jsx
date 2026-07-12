@@ -216,7 +216,7 @@ export default function HomePage() {
                 src="/Image.jpeg"
                 alt="Keith Graham, Founder of Clarent Coaching"
                 fill
-                style={{ objectFit: 'cover', borderRadius: '8px' }}
+                style={{ objectFit: 'cover', objectPosition: 'center top', borderRadius: '8px' }}
               />
             </div>
           </div>
