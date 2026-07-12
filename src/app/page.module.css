@@ -241,10 +241,12 @@
 }
 
 .founderImageSlot {
+  position: relative;
   width: 100%;
   aspect-ratio: 520 / 680;
   background: #c5baa8;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 /* Bullet list */

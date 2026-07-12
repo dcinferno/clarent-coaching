@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import ClarityArc from '@/components/ClarityArc';
 import FAQAccordion from '@/components/FAQAccordion';
@@ -221,7 +222,14 @@ export default function HomePage() {
                 Regent University
               </p>
             </div>
-            <div className={styles.founderImageSlot} />
+            <div className={styles.founderImageSlot}>
+              <Image
+                src="/Image.jpeg"
+                alt="Keith Graham, Founder of Clarent Coaching"
+                fill
+                style={{ objectFit: 'cover', borderRadius: '8px' }}
+              />
+            </div>
           </div>
         </div>
       </section>
