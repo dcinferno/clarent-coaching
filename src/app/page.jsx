@@ -12,9 +12,9 @@ export default function HomePage() {
       <section className={`${styles.section} ${styles.hero}`}>
         <div className={styles.heroInner}>
           <div className="stack">
-            <h1>Clear Thinking for Complex Decisions</h1>
+            <h1>Clear Thinking<br /><span style={{ fontSize: '0.85em' }}>for Complex Decisions</span></h1>
             <p className={styles.subhead}>
-              <em>Because life doesn&apos;t pause while you wait to decide.</em>
+              <em>Because life doesn&apos;t pause, while you wait to decide.</em>
             </p>
             <p>
               Important decisions are often consequential. They carry weight, create pressure, and demand
