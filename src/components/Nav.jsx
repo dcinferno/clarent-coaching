@@ -29,7 +29,7 @@ export default function Nav() {
     <header className={headerClass}>
       <div className={styles.inner}>
         <Link href="/" className={styles.wordmark} onClick={() => setOpen(false)}>
-          CLARENT COACHING
+          CLARENT COACHING™
         </Link>
 
         <button

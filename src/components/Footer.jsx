@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
-        <p className={styles.tagline}>Clarent Coaching™</p>
+        <p className={styles.tagline}>© 2026 Clarent Coaching™</p>
         <nav className={styles.links}>
           <Link href="/#about" className={styles.link}>About</Link>
           <Link href="/#system" className={styles.link}>System</Link>
