@@ -6,7 +6,7 @@ import styles from './Nav.module.css';
 const navLinks = [
   { href: '/#about', label: 'About' },
   { href: '/#system', label: 'System' },
-  { href: '/#founder', label: 'Keith Graham' },
+  { href: '/#founder', label: 'About Coach' },
   { href: '/#faq', label: 'FAQ' },
   { href: '/#ethics', label: 'Ethics' },
   { href: '/#privacy', label: 'Privacy' },

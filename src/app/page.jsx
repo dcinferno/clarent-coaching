@@ -35,7 +35,6 @@ export default function HomePage() {
               This is decision coaching: a disciplined way to create direction that you can act on
               with confidence in your own reasoning.
             </p>
-            <p><strong>Investment: $900 per Movement</strong></p>
             <Link href="/contact" className={styles.button}>Begin the Conversation</Link>
           </div>
         </div>
@@ -154,10 +153,6 @@ export default function HomePage() {
             <div className={styles.systemComponent}>
               <h3>The Clarent Coaching Matrix™</h3>
               <p>The cognitive structure used inside every session. It consists of:</p>
-              <ul className={styles.bulletList}>
-                <li>The Cognitive Sequence™</li>
-                <li>The Adaptive Logic™</li>
-              </ul>
               <div className={styles.movementList}>
                 <div className={styles.movementItem}>
                   <span className={styles.movementLabel}>The Cognitive Sequence™</span>
@@ -182,8 +177,6 @@ export default function HomePage() {
                 understanding, directional decision formation, and intentional movement.
               </p>
             </div>
-
-            <Link href="#founder" className={styles.button}>Meet Keith Graham</Link>
           </div>
         </div>
       </section>
@@ -204,10 +197,6 @@ export default function HomePage() {
                 forward. But movement doesn&apos;t require certainty. It begins when coherent understanding
                 forms into direction that supports decision formation—producing cognitive clarity as
                 the process unfolds.
-              </p>
-              <p>
-                My graduate studies in Organizational Leadership, with a concentration in Coaching &amp;
-                Mentoring at Regent University, shaped the method behind this work.
               </p>
               <p>
                 Clarent grew out of that focus — a structured way to build coherent understanding,
@@ -234,7 +223,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6 — FAQ */}
+      {/* 6 — Investment */}
+      <section id="investment" className={`${styles.section} ${styles.bgTaupeLight}`}>
+        <div className={styles.container}>
+          <div className="stack">
+            <h2>Investment</h2>
+            <h3>$900 per Movement</h3>
+            <p>No tiers. No upsells. No add-ons.</p>
+            <p>Begin with a fee-free Discovery Session.</p>
+            <p>Continue only if Clarent is the right fit.</p>
+            <Link href="/contact" className={styles.button}>Schedule a Discovery Session</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 7 — FAQ */}
       <section id="faq" className={styles.section}>
         <div className={styles.container}>
           <div className="stack">
