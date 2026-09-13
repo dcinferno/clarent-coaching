@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-const navItems = [['About','#about'],['System','#system'],['Coach','#coach'],['Ethics','#ethics'],['FAQ','#faq'],['Book','#book']];
+const navItems = [['About','#about'],['System','#system'],['Coach','#coach'],['Ethics','#ethics'],['FAQ','#faq']];
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <main id="top">
       <Header />
-      <section className="hero"><div className="hero-photo" aria-hidden="true"><Image src="/header_desktop.png" alt="" fill priority sizes="100vw" className="hero-photo-desktop" /><Image src="/header_mobile.png" alt="" fill priority sizes="100vw" className="hero-photo-mobile" /></div><div className="hero-grid"><div className="hero-copy"><p className="eyebrow">Professional Decision Coaching</p><h1>Clear Thinking for <span>Complex Decisions.</span></h1><p className="hero-subhead">Because decisions cannot always wait for clarity.</p><div className="hero-actions"><a className="button primary" href="#book">Book a Free Discovery Session</a><a className="text-link" href="#about">Learn more <span>→</span></a></div></div></div></section>
+      <section className="hero"><div className="hero-photo" aria-hidden="true"><Image src="/header_desktop.png" alt="" fill priority sizes="100vw" className="hero-photo-desktop" /><Image src="/header_mobile_v2.png" alt="" fill priority sizes="100vw" className="hero-photo-mobile" /></div><div className="hero-grid"><div className="hero-copy"><p className="eyebrow">Professional Decision Coaching</p><h1>Clear Thinking for <span>Complex Decisions.</span></h1><p className="hero-subhead">Because decisions cannot always wait for clarity.</p><div className="hero-actions"><a className="button primary" href="#book">Book a Free Discovery Session</a><a className="text-link" href="#about">Learn more <span>→</span></a></div></div></div></section>
       <section className="orientation-strip" aria-label="Clarent orientation"><div><strong>Organize</strong><span>Reduce mental noise.</span></div><div><strong>Examine</strong><span>Understand what matters.</span></div><div><strong>Evaluate</strong><span>Test what emerges.</span></div><div><strong>Form</strong><span>Develop usable direction.</span></div></section>
 
       <Section id="about" eyebrow="About Clarent" title="The Practice">
