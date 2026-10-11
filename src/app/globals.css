@@ -124,6 +124,10 @@ details p { max-width:760px; margin:0 0 28px; color:#4a4f54; }
 .book-price { font-family:Georgia,serif; font-size:62px; margin:0; color:var(--taupe); line-height:1; }
 .book-price span { display:block; font-family:Inter,sans-serif; font-size:14px; text-transform:uppercase; letter-spacing:.12em; color:white; margin-top:16px; }
 .book-grid .button.primary { background:white; color:var(--navy); margin-top:20px; }
+.book-question { margin-top:40px; padding-top:28px; border-top:1px solid rgba(255,255,255,.18); }
+.book-question .eyebrow { color:var(--taupe); }
+.book-question p { color:rgba(255,255,255,.75); margin:0 0 12px; }
+.book-question a { color:var(--taupe); text-decoration:underline; text-underline-offset:3px; }
 footer { padding:42px clamp(24px,5vw,72px); display:flex; justify-content:space-between; gap:24px; background:#0d1d2b; color:#d4d8dc; font-size:12px; letter-spacing:.04em; }
 footer div { display:flex; flex-direction:column; gap:5px; }
 footer a { color:var(--taupe); text-decoration:underline; text-underline-offset:3px; }

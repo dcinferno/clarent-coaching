@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { BOOKING_URL } from '@/lib/booking';
 
 const navItems = [['About','#about'],['System','#system'],['Coach','#coach'],['Ethics','#ethics'],['FAQ','#faq']];
 
@@ -16,9 +17,9 @@ function Header() {
     <header className="site-header">
       <a className="brand" href="#top" aria-label="Clarent Coaching home"><span className="brand-name">Clarent Coaching</span><span className="brand-tag">Clear Thinking for Complex Decisions</span></a>
       <nav className="desktop-nav" aria-label="Primary navigation">{navItems.map(([label, href]) => <a key={label} href={href}>{label}</a>)}</nav>
-      <a className="header-cta" href="#book">Book a Discovery Session</a>
+      <a className="header-cta" href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book a Discovery Session</a>
       <button className="menu-button" type="button" aria-expanded={open} aria-controls="mobile-navigation" aria-label={open ? 'Close navigation menu' : 'Open navigation menu'} onClick={() => setOpen(v => !v)}><span /><span /><span /></button>
-      {open && <div id="mobile-navigation" className="mobile-nav">{navItems.map(([label, href]) => <a key={label} href={href} onClick={() => setOpen(false)}>{label}</a>)}<a className="mobile-cta" href="#book" onClick={() => setOpen(false)}>Book a Discovery Session</a></div>}
+      {open && <div id="mobile-navigation" className="mobile-nav">{navItems.map(([label, href]) => <a key={label} href={href} onClick={() => setOpen(false)}>{label}</a>)}<a className="mobile-cta" href={BOOKING_URL} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>Book a Discovery Session</a></div>}
     </header>
   );
 }
@@ -33,8 +34,8 @@ function Section({ id, eyebrow, title, children, className = '' }) {
 
 export default function Home() {
   const faqs = [
-    ['Was Clarent designed for leaders and executives?', <>No. Clarent is decision coaching—not executive or leadership coaching.<br /><br />It is for any adult facing a difficult decision.<br /><br />Cognitive Formation is not tied to a profession, title, or role. It is not about the kind of decision you need to make. It is about developing the organized thinking needed to form a direction that is workable, makes sense, and can hold even without having all the answers.</>],
-    ['Are sessions online or in person?', <>Clarent Coaching is offered online through Zoom.</>],
+    ['What kind of client does Clarent serve?', <>Clarent is for anyone wrestling with, or bogged in, a complex, difficult, or overwhelming decision. That includes those in leadership, and those who aren&apos;t. Decision difficulty is universal. Clarent works from that understanding.</>],
+    ['How are sessions conducted?', <>Coaching sessions are currently offered through video call only.</>],
     ['How can I know if Clarent is right for me?', <>The Free Discovery Session allows you to experience the approach and determine whether it fits your situation.</>],
     ['Why are there no payment plans?', <>Clarent keeps the financial side straightforward. Payment plans can shift attention away from the work and make the relationship feel transactional.</>],
     ['Is there a refund policy?', <>There are no general refunds.<br /><br />If Clarent cannot continue coaching because of a legal or ethical circumstance, a prorated refund is provided for sessions that have been paid for but have not yet begun.</>],
@@ -45,7 +46,7 @@ export default function Home() {
   return (
     <main id="top">
       <Header />
-      <section className="hero"><div className="hero-photo" aria-hidden="true"><Image src="/header_desktop.png" alt="" fill priority sizes="100vw" className="hero-photo-desktop" /><Image src="/header_mobile_v2.png" alt="" fill priority sizes="100vw" className="hero-photo-mobile" /></div><div className="hero-grid"><div className="hero-copy"><p className="eyebrow">Professional Decision Coaching</p><h1>Clear Thinking for <span>Complex Decisions.</span></h1><p className="hero-subhead">Because decisions cannot always wait for clarity.</p><div className="hero-actions"><a className="button primary" href="#book">Book a Free Discovery Session</a><a className="text-link" href="#about">Learn more <span>→</span></a></div></div></div></section>
+      <section className="hero"><div className="hero-photo" aria-hidden="true"><Image src="/header_desktop.png" alt="" fill priority sizes="100vw" className="hero-photo-desktop" /><Image src="/header_mobile_v2.png" alt="" fill priority sizes="100vw" className="hero-photo-mobile" /></div><div className="hero-grid"><div className="hero-copy"><p className="eyebrow">Professional Decision Coaching</p><h1>Clear Thinking for <span>Complex Decisions.</span></h1><p className="hero-subhead">Because decisions cannot always wait for clarity.</p><div className="hero-actions"><a className="button primary" href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book a Free Discovery Session</a><a className="text-link" href="#about">Learn more <span>→</span></a></div></div></div></section>
       <section className="orientation-strip" aria-label="Clarent orientation"><div><strong>Organize</strong><span>Reduce mental noise.</span></div><div><strong>Examine</strong><span>Understand what matters.</span></div><div><strong>Evaluate</strong><span>Test what emerges.</span></div><div><strong>Form</strong><span>Develop usable direction.</span></div></section>
 
       <Section id="about" eyebrow="About Clarent" title="The Practice">
@@ -77,9 +78,9 @@ export default function Home() {
 
       <Section id="faq" eyebrow="FAQs" title="Questions before you begin"><div className="faq-list">{faqs.map(([q, a]) => <details key={q}><summary>{q}<span>+</span></summary><p>{a}</p></details>)}</div></Section>
 
-      <Section id="book" eyebrow="Investment" title="$900 per Movement" className="book-section"><div className="book-grid"><div><p>Your commitment is one Movement at a time. There is no requirement to complete all.</p><p>No tiers.<br />No upsells.<br />No add-ons.</p></div><div><h3>Book a Free Discovery Session</h3><p className="book-closing">Experience Clarent, then decide.</p><p>Begin with a Free Discovery Session. Continue only if Clarent is the right fit.</p><a className="button primary" href="mailto:hello@clarentcoaching.com?subject=Discovery%20Session">Book a Free Discovery Session</a></div></div></Section>
+      <Section id="book" eyebrow="Investment" title="$900 per Movement" className="book-section"><div className="book-grid"><div><p>A Movement is four one‑on‑one sessions, about sixty minutes each.</p><p>Your commitment is one Movement at a time. There is no requirement to complete all.</p><p>No tiers.<br />No upsells.<br />No add-ons.</p></div><div><h3>Book a Free Discovery Session</h3><p className="book-closing">Experience Clarent, then decide.</p><p>Begin with a Free Discovery Session. Continue only if Clarent is the right fit.</p><a className="button primary" href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book a Free Discovery Session</a><div className="book-question"><p className="eyebrow">Have a question before scheduling?</p><p>You&apos;re welcome to reach out by email if you&apos;d like to learn more about Clarent Coaching before booking a Discovery Session.</p><a href="mailto:connect@clarentcoaching.com">connect@clarentcoaching.com</a></div></div></div></Section>
 
-      <footer><div><strong>Clarent Coaching™</strong><span>Professional Decision Coaching.</span></div><div className="footer-right"><span>Online via Zoom • By appointment only</span><span>© 2026 Clarent Coaching. All rights reserved. · <a href="https://www.clarentcoaching.com/terms">Terms</a></span></div></footer>
+      <footer><div><strong>Clarent Coaching™</strong><span>Professional Decision Coaching.</span><a href="mailto:Connect@clarentcoaching.com">Connect@clarentcoaching.com</a></div><div className="footer-right"><span>Online via Zoom • By appointment only</span><span>© 2026 Clarent Coaching. All rights reserved. · <a href="/terms">Terms</a></span></div></footer>
     </main>
   );
 }
