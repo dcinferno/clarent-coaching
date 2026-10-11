@@ -54,8 +54,10 @@ export default function HomePage() {
             </p>
             <p>
               Clarent works with anyone facing difficult, complex, and consequential uncertainty—a significant
-              life pivot, a leadership decision, or an organizational obligation—because the concern is not
-              the position, but the person.
+              life pivot, a leadership decision, or an organizational obligation.{' '}
+              <span style={{ fontSize: '0.8em' }}>
+                The focus is not on the person&apos;s role, but on the person with that role.
+              </span>
             </p>
             <p className={styles.closingNote}>
               This is not motivational coaching.<br />
@@ -228,10 +230,14 @@ export default function HomePage() {
         <div className={styles.container}>
           <div className="stack">
             <h2>Investment</h2>
-            <h3>$900 per Movement</h3>
-            <p>No tiers. No upsells. No add-ons.</p>
-            <p>Begin with a fee-free Discovery Session.</p>
-            <p>Continue only if Clarent is the right fit.</p>
+            <p style={{ fontSize: '1.1rem', fontWeight: 500 }}>$900 per Movement</p>
+            <p>A Movement is four one‑on‑one sessions, about sixty minutes each.</p>
+            <p>Your commitment is one Movement at a time. There is no requirement to complete all.</p>
+            <p className={styles.closingNote}>
+              No tiers.<br />
+              No upsells.<br />
+              No add‑ons.
+            </p>
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className={styles.button}>Schedule a Discovery Session</a>
           </div>
         </div>
@@ -278,8 +284,13 @@ export default function HomePage() {
             <h2>Privacy + AI Use</h2>
             <p>Minimal‑Record Philosophy</p>
             <p>
-              Clarent maintains a minimal‑record philosophy. Sessions are not recorded, and only
-              essential scheduling information is retained.
+              Clarent does not retain session notes for marketing, research, aggregate data collection,
+              or other secondary uses.
+            </p>
+            <p>
+              Sessions are never recorded.<br />
+              The only session records retained are written materials.<br />
+              These records do not include unnecessary personal identifying information.
             </p>
             <p>
               Limited AI tools may be used after sessions to organize anonymized coaching reflections

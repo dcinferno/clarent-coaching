@@ -4,11 +4,11 @@ import { useState } from 'react';
 const faqs = [
   {
     q: 'What kind of client does Clarent serve?',
-    a: 'Clarent works with anyone facing difficult, complex, and consequential uncertainty — a significant life pivot, a leadership decision, or an organizational obligation — because the concern is not the position, but the person.',
+    a: 'Clarent is for anyone wrestling with, or bogged in, a complex, difficult, or overwhelming decision. That includes those in leadership, and those who aren\'t. Decision difficulty is universal. Clarent works from that understanding.',
   },
   {
-    q: 'What if I have a decision that needs quick resolution?',
-    a: 'Clarent\'s work is iterative and intentionally thorough. There are no quick fixes for complex decisions. The work starts with building coherent understanding so direction can support decision formation—and cognitive clarity can follow from that process.',
+    q: 'How are sessions conducted?',
+    a: 'Coaching sessions are currently offered through video call only.',
   },
   {
     q: 'Why is there no payment plan?',
@@ -17,6 +17,10 @@ const faqs = [
   {
     q: 'Is there a refund?',
     a: 'Clarent does not offer refunds, except when service cannot continue for legal or operational reasons. In those cases, a refund can be issued for paid sessions not yet started.',
+  },
+  {
+    q: 'What if I have a decision that needs quick resolution?',
+    a: 'Clarent\'s work is iterative and intentionally thorough. There are no quick fixes for complex decisions. The work starts with building coherent understanding so direction can support decision formation—and cognitive clarity can follow from that process.',
   },
   {
     q: 'How long is a session, and how rigid is the conversation?',
