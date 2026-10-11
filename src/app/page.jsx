@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ClarityArc from '@/components/ClarityArc';
 import FAQAccordion from '@/components/FAQAccordion';
+import { BOOKING_URL } from '@/lib/booking';
 import styles from './page.module.css';
 
 export default function HomePage() {
@@ -35,7 +36,7 @@ export default function HomePage() {
               This is decision coaching: a disciplined way to create direction that you can act on
               with confidence in your own reasoning.
             </p>
-            <Link href="/contact" className={styles.button}>Begin the Conversation</Link>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className={styles.button}>Begin the Conversation</a>
           </div>
         </div>
         <ClarityArc />
@@ -231,7 +232,7 @@ export default function HomePage() {
             <p>No tiers. No upsells. No add-ons.</p>
             <p>Begin with a fee-free Discovery Session.</p>
             <p>Continue only if Clarent is the right fit.</p>
-            <Link href="/contact" className={styles.button}>Schedule a Discovery Session</Link>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className={styles.button}>Schedule a Discovery Session</a>
           </div>
         </div>
       </section>
@@ -302,7 +303,7 @@ export default function HomePage() {
               A conversation to determine whether the Clarent Approach is appropriate for the work being navigated.
             </p>
             <p className={styles.dimText}>There is no pressure to continue.</p>
-            <Link href="/contact" className={styles.buttonLight}>Schedule a Discovery Session</Link>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className={styles.buttonLight}>Schedule a Discovery Session</a>
           </div>
         </div>
       </section>

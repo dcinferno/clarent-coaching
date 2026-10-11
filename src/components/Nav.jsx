@@ -6,12 +6,8 @@ import styles from './Nav.module.css';
 const navLinks = [
   { href: '/#about', label: 'About' },
   { href: '/#system', label: 'System' },
-  { href: '/#founder', label: 'Coach' },
-  { href: '/#faq', label: 'FAQ' },
   { href: '/#ethics', label: 'Ethics' },
-  { href: '/#privacy', label: 'Privacy' },
-  { href: '/terms', label: 'Terms' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/#faq', label: 'FAQ' },
 ];
 
 export default function Nav() {
