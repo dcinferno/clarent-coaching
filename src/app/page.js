@@ -17,9 +17,9 @@ function Header() {
     <header className="site-header">
       <a className="brand" href="#top" aria-label="Clarent Coaching home"><span className="brand-name">Clarent Coaching</span><span className="brand-tag">Clear Thinking for Complex Decisions</span></a>
       <nav className="desktop-nav" aria-label="Primary navigation">{navItems.map(([label, href]) => <a key={label} href={href}>{label}</a>)}</nav>
-      <a className="header-cta" href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book a Discovery Session</a>
+      <a className="header-cta" href="#book">Book a Discovery Session</a>
       <button className="menu-button" type="button" aria-expanded={open} aria-controls="mobile-navigation" aria-label={open ? 'Close navigation menu' : 'Open navigation menu'} onClick={() => setOpen(v => !v)}><span /><span /><span /></button>
-      {open && <div id="mobile-navigation" className="mobile-nav">{navItems.map(([label, href]) => <a key={label} href={href} onClick={() => setOpen(false)}>{label}</a>)}<a className="mobile-cta" href={BOOKING_URL} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>Book a Discovery Session</a></div>}
+      {open && <div id="mobile-navigation" className="mobile-nav">{navItems.map(([label, href]) => <a key={label} href={href} onClick={() => setOpen(false)}>{label}</a>)}<a className="mobile-cta" href="#book" onClick={() => setOpen(false)}>Book a Discovery Session</a></div>}
     </header>
   );
 }
@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <main id="top">
       <Header />
-      <section className="hero"><div className="hero-photo" aria-hidden="true"><Image src="/header_desktop.png" alt="" fill priority sizes="100vw" className="hero-photo-desktop" /><Image src="/header_mobile_v2.png" alt="" fill priority sizes="100vw" className="hero-photo-mobile" /></div><div className="hero-grid"><div className="hero-copy"><p className="eyebrow">Professional Decision Coaching</p><h1>Clear Thinking for <span>Complex Decisions.</span></h1><p className="hero-subhead">Because decisions cannot always wait for clarity.</p><div className="hero-actions"><a className="button primary" href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book a Free Discovery Session</a><a className="text-link" href="#about">Learn more <span>→</span></a></div></div></div></section>
+      <section className="hero"><div className="hero-photo" aria-hidden="true"><Image src="/header_desktop.png" alt="" fill priority sizes="100vw" className="hero-photo-desktop" /><Image src="/header_mobile_v2.png" alt="" fill priority sizes="100vw" className="hero-photo-mobile" /></div><div className="hero-grid"><div className="hero-copy"><p className="eyebrow">Professional Decision Coaching</p><h1>Clear Thinking for <span>Complex Decisions.</span></h1><p className="hero-subhead">Because decisions cannot always wait for clarity.</p></div></div></section>
       <section className="orientation-strip" aria-label="Clarent orientation"><div><strong>Organize</strong><span>Reduce mental noise.</span></div><div><strong>Examine</strong><span>Understand what matters.</span></div><div><strong>Evaluate</strong><span>Test what emerges.</span></div><div><strong>Form</strong><span>Develop usable direction.</span></div></section>
 
       <Section id="about" eyebrow="About Clarent" title="The Practice">
