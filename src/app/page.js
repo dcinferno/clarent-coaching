@@ -34,11 +34,11 @@ function Section({ id, eyebrow, title, children, className = '' }) {
 
 export default function Home() {
   const faqs = [
-    ['What kind of client does Clarent serve?', <>Clarent is for anyone wrestling with, or bogged in, a complex, difficult, or overwhelming decision. That includes those in leadership, and those who aren&apos;t. Decision difficulty is universal. Clarent works from that understanding.</>],
-    ['How are sessions conducted?', <>Coaching sessions are currently offered through video call only.</>],
+    ['Was Clarent designed for leaders and executives?', <>Clarent is for anyone wrestling with, or bogged in, a complex, difficult, or overwhelming decision. That includes those in leadership, and those who aren&apos;t. Decision difficulty is universal. Clarent works from that understanding.</>],
+    ['Are sessions online or in person?', <>Coaching sessions are currently offered through video call only.</>],
     ['How can I know if Clarent is right for me?', <>The Free Discovery Session allows you to experience the approach and determine whether it fits your situation.</>],
     ['Why are there no payment plans?', <>Clarent keeps the financial side straightforward. Payment plans can shift attention away from the work and make the relationship feel transactional.</>],
-    ['Is there a refund policy?', <>There are no general refunds.<br /><br />If Clarent cannot continue coaching because of a legal or ethical circumstance, a prorated refund is provided for sessions that have been paid for but have not yet begun.</>],
+    ['Is there a refund policy?', <>Once a Movement&apos;s first session begins, its fee is final. Pausing or ending coaching does not create a refund.<br /><br />If legal or ethical duties require Clarent to end coaching, a prorated refund is provided for sessions not yet begun. Any payment-processing fee that the provider does not return to Clarent is deducted. Clarent issues the refund within ten business days after coaching ends.</>],
     ['What if I do not find clarity?', <>Clarity is not guaranteed.<br /><br />The Clarent Approach supports the development of organized thinking so you can form a direction that makes sense and is usable, even when your understanding remains incomplete.</>],
     ['Why are there no testimonials?', <>Every engagement is different. Testimonials can create expectations that another person’s experience will be yours.<br /><br />Clarent prefers to let its approach and standards speak for themselves.</>]
   ];
